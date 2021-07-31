@@ -6,7 +6,9 @@ const operaciones = () => {
     "Escribe: \n  1 - Sumar \n  2 - Resta \n  3 - Multiplicacion \n  4 - Division"
   );
 
-  while (op !== "1" && op !== "2" && op !== "3" && op !== "4" || op === "" || op === null) {
+
+  
+  while (op !== "1" && op !== "2" && op !== "3" && op !== "4") {
     alert("Favor ingresar una opcion valida de 1 a 4");
     op = prompt(
       "Escribe: \n  1 - Sumar \n  2 - Resta \n  3 - Multiplicacion \n  4 - Division"
@@ -14,9 +16,12 @@ const operaciones = () => {
   }
 
   console.log(op);
+  
   let num1 = parseFloat(prompt("Ingrese numero 1"));
   let num2 = parseFloat(prompt("Ingrese numero 2"));
   let resultado = 0;
+
+  
 
   if (op === "1") {
     resultado = num1 + num2;
